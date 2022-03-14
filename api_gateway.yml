@@ -1,14 +1,9 @@
-server:
-  port: 8765
 spring:
   application:
     name: api-gateway
-  config:
-    import: optional:configserver:http://192.168.213.128:8888
   cloud:
     config:
       name: api_gateway
-      uri: http://192.168.213.128:8888
     gateway:
       discovery:
         locator:
